@@ -575,8 +575,8 @@ select:focus {
 /* Main Menu Area End */
 /* Footer Area Start */
 .footer {
-  padding-top: 100px;
-  overflow: hidden;
+  /* padding-top: 100px;
+  overflow: hidden; */
   position: relative;
   background-repeat: no-repeat;
   background-position: center 140px;
