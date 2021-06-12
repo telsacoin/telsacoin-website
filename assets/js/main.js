@@ -24,6 +24,10 @@ $(function ($) {
             type: 'video'
         });
 
+        $('.joinairdrop .btn').magnificPopup({
+            type: 'iframe'
+        });
+
         $('.img-popup').magnificPopup({
             type: 'image'
         });
