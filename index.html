@@ -1,665 +1,882 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Telsa Coin - Community-focused Decentralized Cryptocurrency & Exchange
+    </title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://www.jq22.com/jquery/bootstrap-4.2.1.css"
+    />
+    <!-- Plugin css -->
+    <link rel="stylesheet" href="assets/css/plugin.css" />
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Telsa Coin - Community-focused Decentralized Cryptocurrency & Exchange </title>
-	<!-- favicon -->
-	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-	<!-- bootstrap -->
-	<link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-4.2.1.css">
-	<!-- Plugin css -->
-	<link rel="stylesheet" href="assets/css/plugin.css">
-	<!-- Flaticon -->
-	<link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <style>
+      .pull-left li {
+        float: left;
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        border: 1px solid #000;
+        margin: 20px;
+        line-height: 95px;
+        text-align: center;
+      }
+      .pull-left li a i {
+        font-size: 40px;
+      }
+    </style>
+  </head>
 
-	<!-- stylesheet -->
-	<link rel="stylesheet" href="assets/css/style.css">
-	<!-- responsive -->
-	<link rel="stylesheet" href="assets/css/responsive.css">
-	<style>
-		.pull-left li{
-			float: left;
-			width: 80px;
-			height: 80px;
-			border-radius: 40px;
-			border: 1px solid #000;
-			margin: 20px;
-			line-height: 95px;
-    		text-align: center;
-		}
-		.pull-left li a i{
-			font-size: 40px;
-		}
-	</style>
-</head>
+  <body>
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+      <div class="loader loader-1">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+      </div>
+    </div>
+    <!-- preloader area end -->
 
-<body>
-	<!-- preloader area start -->
-	<div class="preloader" id="preloader">
-		<div class="loader loader-1">
-			<div class="loader-outter"></div>
-			<div class="loader-inner"></div>
-		</div>
-	</div>
-	<!-- preloader area end -->
+    <!--Main-Menu Area Start-->
+    <div class="mainmenu-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="/">
+                <img src="assets/images/logo.png" alt="" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#main_menu"
+                aria-controls="main_menu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse fixed-height" id="main_menu">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/TSLA Coin White Paper.pdf"
+                      data-target="#parentDropdown"
+                      target="_blank"
+                      >Why TSLA
+                      <div class="mr-hover-effect"></div
+                    ></a>
+                  </li>
+                  <li class="nav-item dropdown d-none">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#hero-area"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Home
+                      <div class="mr-hover-effect"></div>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="index.html">Home1</a>
+                      <a class="dropdown-item" href="index2.html">Home2</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#features"
+                      >How TO BUY
+                      <div class="mr-hover-effect"></div
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#important-features"
+                      >Overview
+                      <div class="mr-hover-effect"></div
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#roadmaps"
+                      >Roadmap
+                      <div class="mr-hover-effect"></div
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#community"
+                      >Community
+                      <div class="mr-hover-effect"></div
+                    ></a>
+                  </li>
 
-	
-	<!--Main-Menu Area Start-->
-	<div class="mainmenu-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">                 
-					<nav class="navbar navbar-expand-lg navbar-light">
-						<a class="navbar-brand" href="/">
-							<img src="assets/images/logo.png" alt="">
-						</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_menu" aria-controls="main_menu"
-							aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse fixed-height" id="main_menu">
-							<ul class="navbar-nav ml-auto">
-								<li class="nav-item">
-									<a class="nav-link" href="/TSLA Coin White Paper.pdf" data-target="#parentDropdown" target="_blank">Why TSLA
-											<div class="mr-hover-effect"></div></a>
-								</li>
-								<li class="nav-item dropdown d-none">
-									<a class="nav-link dropdown-toggle" href="#hero-area" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Home
-										<div class="mr-hover-effect"></div>
-									</a>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="index.html">Home1</a>
-										<a class="dropdown-item" href="index2.html">Home2</a>
-									</div>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#features">How TO BUY
-											<div class="mr-hover-effect"></div></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#important-features">Overview
-											<div class="mr-hover-effect"></div></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#pricing">Roadmap
-											<div class="mr-hover-effect"></div></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#community">Community
-											<div class="mr-hover-effect"></div></a>
-								</li>
-
-								<!-- li class="nav-item">
+                  <!-- li class="nav-item">
 									<a class="nav-link" href="#faq-area">FAQ
 											<div class="mr-hover-effect"></div></a>
 								</li> -->
-								<!-- <li class="nav-item">
+                  <!-- <li class="nav-item">
 									<a class="nav-link" href="#faq-area">Contribute
 											<div class="mr-hover-effect"></div></a>
 								</li> -->
-								<li id="parentDropdown" class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#blog-area" data-target="#parentDropdown" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Chat
-										<div class="mr-hover-effect"></div>
-									</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<a class="dropdown-item" href="https://discord.gg/myA5Cp5SeE" data-target="#main_menu" target="_blank">Discord</a>
-										<a class="dropdown-item" href="https://t.me/tslacoingoup" data-target="#main_menu" target="_blank">Telegram</a>
-										<a class="dropdown-item" href="https://twitter.com/tlsacoin" data-target="#main_menu" target="_blank">Twitter</a>
-										<a class="dropdown-item" href="https://www.youtube.com/channel/UCTryQVe9e0ATlYslT13C-cg" data-target="#main_menu" target="_blank">Youtube</a>
-										<a class="dropdown-item" href="https://www.reddit.com/r/telsacoin" data-target="#main_menu" target="_blank">Reddit</a>
-										<a class="dropdown-item" href="https://www.dextools.io/app/pancakeswap/pair-explorer/0x468c98affa8e213ec49e4b4d88050d36fba83a53" data-target="#main_menu" target="_blank">Dextools</a>
-										<a class="dropdown-item" href="https://bscscan.com/token/0xc20f70ee092f7780a065879164767811e20edbdc" data-target="#main_menu" target="_blank">Tokens</a>
-									</div>
-								</li>
-							</ul>
-							<a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xc20f70ee092f7780a065879164767811e20edbdc" class="base-btn2" target="_blank">
-                <img class="download-icon" src="assets/images/download.svg" width="16px" height="16px" >
-                Download</a>
-						</div>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--Main-Menu Area Start-->
-
-	<!-- Hero Area Start -->
-	<div class="hero-area" id="hero-area">
-		<div class="hero-img">
-			<img src="assets/images/demo.gif" alt="">
-			<!-- <a href="https://www.youtube.com/watch?v=xdNiG1bW2Lc" class="video-play-btn mfp-iframe">
-					<i class="fas fa-play"></i>
-			</a> -->
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5">
-					<div class="left-content">
-						<div class="content">
-							<h1 class="title">
-									TSLA
-									Coin
-							</h1>
-							<p class="text">
-								A multi-chain ecosystem with support for video、gaming、exchange and wallet, TSLA marketplace
-								and decentralized finance.
-							</p>
-							<div class="subscribe-area">
-								<form action="#" class="joinairdrop-form">
-									<div class="joinairdrop" style="width: 33.5%;padding: 0;position: relative;margin-right: 10%;">
-										<!-- <a href="https://form.jotform.com/211620703206441" class="btn mfp-iframe"><i class="fas fa-andriod"></i>  andriod </a> -->
-										<a href="https://www.pgyer.com/dtok" class="btn mfp-iframe">
-                      <img src="assets/images/android.svg" alt="">
-                      android
+                  <li id="parentDropdown" class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#blog-area"
+                      data-target="#parentDropdown"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Chat
+                      <div class="mr-hover-effect"></div>
                     </a>
-									</div>
-									<div class="joinairdrop" style="width: 25%;padding: 0;position: relative;">
-										<!-- <a href="https://form.jotform.com/211620703206441" class="btn mfp-iframe"><i class="fas fa-andriod"></i>  andriod </a> -->
-										<a href="https://form.jotform.com/211620703206441" class="btn mfp-iframe">
-                     <img src="assets/images/ios.svg" alt="">
-                     ios
-                    </a>
-									</div>
-							  </form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Hero Area End -->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a
+                        class="dropdown-item"
+                        href="https://discord.gg/myA5Cp5SeE"
+                        data-target="#main_menu"
+                        target="_blank"
+                        >Discord</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="https://t.me/tslacoingoup"
+                        data-target="#main_menu"
+                        target="_blank"
+                        >Telegram</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="https://twitter.com/tlsacoin"
+                        data-target="#main_menu"
+                        target="_blank"
+                        >Twitter</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="https://www.youtube.com/channel/UCTryQVe9e0ATlYslT13C-cg"
+                        data-target="#main_menu"
+                        target="_blank"
+                        >Youtube</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="https://www.reddit.com/r/telsacoin"
+                        data-target="#main_menu"
+                        target="_blank"
+                        >Reddit</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="https://www.dextools.io/app/pancakeswap/pair-explorer/0x468c98affa8e213ec49e4b4d88050d36fba83a53"
+                        data-target="#main_menu"
+                        target="_blank"
+                        >Dextools</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="https://bscscan.com/token/0xc20f70ee092f7780a065879164767811e20edbdc"
+                        data-target="#main_menu"
+                        target="_blank"
+                        >Tokens</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+                <a
+                  href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xc20f70ee092f7780a065879164767811e20edbdc"
+                  class="base-btn2"
+                  target="_blank"
+                >
+                  <img
+                    class="download-icon"
+                    src="assets/images/download.svg"
+                    width="16px"
+                    height="16px"
+                  />
+                  Download</a
+                >
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Main-Menu Area Start-->
 
-	<!-- Partner Area Strat -->
-	<section class="partners">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-10">
-					<div class="section-heading">
-						<h2 class="title">
-							Listed by 30+ Exchange
-						</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="partners-slider">
-						<div class="slider-item">
-							<a href="#">
-								<img src="assets/images/partner/1.png" alt="">
-							</a>
-						</div>
-						<div class="slider-item">
-							<a href="#">
-								<img src="assets/images/partner/2.png" alt="">
-							</a>
-						</div>
-						<div class="slider-item">
-							<a href="#">
-								<img src="assets/images/partner/3.png" alt="">
-							</a>
-						</div>
-						<div class="slider-item">
-							<a href="#">
-								<img src="assets/images/partner/4.png" alt="">
-							</a>
-						</div>
-						<div class="slider-item">
-							<a href="#">
-								<img src="assets/images/partner/1.png" alt="">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Partner Area End -->
-  <!-- Team Area Start -->
-	<section class="team">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-10">
-					<div class="section-heading">
-						<h2 class="title">
-							Our Creative Team
-						</h2>
-						<p class="text">
-							We use the latest technologies and tools in order to create a better code that not only works great, but it is easy easy to work with too.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="team-slider">
-						<div class="slider-item">
-							<div class="single-team">
-								<div class="img">
-									<img src="assets/images/team/img1.jpg" alt="">
-								</div>
-								<div class="content">
-									<h4 class="name">
-										Shiyu Cheng
-									</h4>
-									<p class="designation">
-										Foudner/Former Software Engineer at Facebook
-									</p>
-									<ul class="social-links">
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Facebook">
-												<i class="fab fa-facebook-f"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Twitter">
-												<i class="fab fa-twitter"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Linkedin">
-												<i class="fab fa-linkedin-in"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Instagram">
-												<i class="fab fa-instagram"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="slider-item">
-							<div class="single-team">
-								<div class="img">
-									<img src="assets/images/team/img2.jpg" alt="">
-								</div>
-								<div class="content">
-									<h4 class="name">
-										Kartin Wong
-									</h4>
-									<p class="designation">
-										Founder/Former Software Engineer at Google
-									</p>
-									<ul class="social-links">
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Facebook">
-												<i class="fab fa-facebook-f"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Twitter">
-												<i class="fab fa-twitter"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Linkedin">
-												<i class="fab fa-linkedin-in"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Instagram">
-												<i class="fab fa-instagram"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="slider-item">
-							<div class="single-team">
-								<div class="img">
-									<img src="assets/images/team/img3.jpg" alt="">
-								</div>
-								<div class="content">
-									<h4 class="name">
-										Yuqi Zhu
-									</h4>
-									<p class="designation">
-										Founder/Former Software Engineer at Google
-									</p>
-									<ul class="social-links">
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Facebook">
-												<i class="fab fa-facebook-f"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Twitter">
-												<i class="fab fa-twitter"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Linkedin">
-												<i class="fab fa-linkedin-in"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Instagram">
-												<i class="fab fa-instagram"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="slider-item">
-							<div class="single-team">
-								<div class="img">
-									<img src="assets/images/team/img4.jpg" alt="">
-								</div>
-								<div class="content">
-									<h4 class="name">
-										Huaizhe Xu
-									</h4>
-									<p class="designation">
-										Machine Learning Engineer
-									</p>
-									<ul class="social-links">
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Facebook">
-												<i class="fab fa-facebook-f"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Twitter">
-												<i class="fab fa-twitter"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Linkedin">
-												<i class="fab fa-linkedin-in"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Instagram">
-												<i class="fab fa-instagram"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="slider-item">
-							<div class="single-team">
-								<div class="img">
-									<img src="assets/images/team/img5.jpg" alt="">
-								</div>
-								<div class="content">
-									<h4 class="name">
-										Yiwei Shan
-									</h4>
-									<p class="designation">
-                    Marketing & HR
-									</p>
-									<ul class="social-links">
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Facebook">
-												<i class="fab fa-facebook-f"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Twitter">
-												<i class="fab fa-twitter"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Linkedin">
-												<i class="fab fa-linkedin-in"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="link" data-toggle="tooltip" data-placement="top" title="Instagram">
-												<i class="fab fa-instagram"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Hero Area Start -->
+    <div class="hero-area" id="hero-area">
+      <div class="hero-img">
+        <img src="assets/images/demo.gif" alt="" />
+        <a
+          href="https://www.youtube.com/watch?v=xdNiG1bW2Lc"
+          class="video-play-btn mfp-iframe"
+        >
+          <i class="fas fa-play"></i>
+        </a>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="left-content">
+              <div class="content">
+                <h1 class="title">TSLA Coin</h1>
+                <p class="text">
+                  A multi-chain ecosystem with support for
+                  video、gaming、exchange and wallet, TSLA marketplace and
+                  decentralized finance.
+                </p>
+                <div class="subscribe-area">
+                  <form action="#" class="joinairdrop-form">
+                    <div
+                      class="joinairdrop"
+                      style="
+                        width: 33.5%;
+                        padding: 0;
+                        position: relative;
+                        margin-right: 10%;
+                      "
+                    >
+                      <!-- <a href="https://form.jotform.com/211620703206441" class="btn mfp-iframe"><i class="fas fa-andriod"></i>  andriod </a> -->
+                      <a
+                        href="https://www.pgyer.com/dtok"
+                        class="btn mfp-iframe"
+                      >
+                        <img src="assets/images/android.svg" alt="" />
+                        android
+                      </a>
+                    </div>
+                    <div
+                      class="joinairdrop"
+                      style="width: 25%; padding: 0; position: relative"
+                    >
+                      <!-- <a href="https://form.jotform.com/211620703206441" class="btn mfp-iframe"><i class="fas fa-andriod"></i>  andriod </a> -->
+                      <a
+                        href="https://form.jotform.com/211620703206441"
+                        class="btn mfp-iframe"
+                      >
+                        <img src="assets/images/ios.svg" alt="" />
+                        ios
+                      </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Area End -->
 
-	<!-- Our Features Start -->
-	<section class="features" id="features">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-10">
-					<div class="section-heading">
-						<h2 class="title">
-							DTok Features
-						</h2>
-						<p class="text">
-							DTok is a community powered video sharing app platform where users vote on videos to reward creators, curators, influencers and viewers in cryptocurrency, like a decentralized tiktok.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-4 col-md-6">
-					<div class="single-feature">
-						<div class="icon">
-							<i class="flaticon-upload"></i>
-						</div>
-						<div class="content">
-							<h4 class="title">
-								Trade Automation
-							</h4>
-							<p>
-								Simplest platform to start trading cryptocurrencies with no prior experience.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-feature">
-						<div class="icon">
-							<i class="flaticon-settings"></i>
-						</div>
-						<div class="content">
-							<h4 class="title">
-								Simple Fees Structure
-							</h4>
-							<p>
-								No extra subscription or management fees, only pay standard exchange trading fees.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-feature">
-						<div class="icon">
-							<i class="flaticon-target"></i>
-						</div>
-						<div class="content">
-							<h4 class="title">
-								One Stop Solution
-							</h4>
-							<p>
-								TSLA is the simplest one-stop solution for all crypto related needs.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Our Features End -->
+    <!-- Partner Area Strat -->
+    <section class="partners">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <div class="section-heading">
+              <h2 class="title">Listed by 30+ Exchange</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="partners-slider">
+              <div class="slider-item">
+                <a href="#">
+                  <img src="assets/images/partner/1.png" alt="" />
+                </a>
+              </div>
+              <div class="slider-item">
+                <a href="#">
+                  <img src="assets/images/partner/2.png" alt="" />
+                </a>
+              </div>
+              <div class="slider-item">
+                <a href="#">
+                  <img src="assets/images/partner/3.png" alt="" />
+                </a>
+              </div>
+              <div class="slider-item">
+                <a href="#">
+                  <img src="assets/images/partner/4.png" alt="" />
+                </a>
+              </div>
+              <div class="slider-item">
+                <a href="#">
+                  <img src="assets/images/partner/1.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Partner Area End -->
+    <!-- Team Area Start -->
+    <section class="team">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <div class="section-heading">
+              <h2 class="title">Our Creative Team</h2>
+              <p class="text">
+                We use the latest technologies and tools in order to create a
+                better code that not only works great, but it is easy easy to
+                work with too.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="team-slider">
+              <div class="slider-item">
+                <div class="single-team">
+                  <div class="img">
+                    <img src="assets/images/team/img1.jpg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4 class="name">Shiyu Cheng</h4>
+                    <p class="designation">
+                      Foudner/Former Software Engineer at Facebook
+                    </p>
+                    <ul class="social-links">
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Facebook"
+                        >
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Twitter"
+                        >
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Linkedin"
+                        >
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Instagram"
+                        >
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="single-team">
+                  <div class="img">
+                    <img src="assets/images/team/img2.jpg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4 class="name">Kartin Wong</h4>
+                    <p class="designation">
+                      Founder/Former Software Engineer at Google
+                    </p>
+                    <ul class="social-links">
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Facebook"
+                        >
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Twitter"
+                        >
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Linkedin"
+                        >
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Instagram"
+                        >
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="single-team">
+                  <div class="img">
+                    <img src="assets/images/team/img3.jpg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4 class="name">Yuqi Zhu</h4>
+                    <p class="designation">
+                      Founder/Former Software Engineer at Google
+                    </p>
+                    <ul class="social-links">
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Facebook"
+                        >
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Twitter"
+                        >
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Linkedin"
+                        >
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Instagram"
+                        >
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="single-team">
+                  <div class="img">
+                    <img src="assets/images/team/img4.jpg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4 class="name">Huaizhe Xu</h4>
+                    <p class="designation">Machine Learning Engineer</p>
+                    <ul class="social-links">
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Facebook"
+                        >
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Twitter"
+                        >
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Linkedin"
+                        >
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Instagram"
+                        >
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="single-team">
+                  <div class="img">
+                    <img src="assets/images/team/img5.jpg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4 class="name">Yiwei Shan</h4>
+                    <p class="designation">Marketing & HR</p>
+                    <ul class="social-links">
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Facebook"
+                        >
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Twitter"
+                        >
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Linkedin"
+                        >
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="link"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Instagram"
+                        >
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<!-- Important Features Start -->
-	<section class="important-features" id="important-features">
-		<div class="container">
-			<div class="row  mb-100">
-				<div class="col-lg-6 d-flex align-self-center">
-					<div class="image pr-30">
-						<img src="assets/images/src/app-sre2.png" alt="">
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="content">
-						<div class="section-heading">
-							<h2 class="title">
-								100% Portfolio Trade Automation
-							</h2>
-							<p class="text">
-								TSLA is the most advanced portfolio trade automation tool in the market! Designed to protect your funds against
-								market volatility. Our machine learning driven algorithms consistently learn and improves on executing successful
-								trades.
-							</p>
-						</div>
-						<ul class="feature-list">
-							<li>
-								<p>
-									<i class="far fa-check-circle"></i> Simple to use one click setup.
-								</p>
-							</li>
-							<li>
-								<p>
-									<i class="far fa-check-circle"></i> Pre-defined indexes or create your own.
-								</p>
-							</li>
-							<li>
-								<p>
-									<i class="far fa-check-circle"></i>$ USD or BTC maximisation.
-								</p>
-							</li>
-							<li>
-								<p>
-									<i class="far fa-check-circle"></i>24/7 market monitoring.
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="content">
-						<div class="section-heading">
-							<h2 class="title">
-								Simplest way to Buy Crypto
-							</h2>
-							<p class="text">
-								TSLA is a fully automated machine learning-driven trade automation platform designed to help you buy and easily manage your
-								crypto portfolio. Our machine-learning driven strategies know exactly when to enter the market so you don’t have to
-								worry about spending days or weeks to find an optimum entry.
-							</p>
-						</div>
-						<ul class="feature-list">
-							<li>
-								<p>
-									<i class="far fa-check-circle"></i> Simple to use one click setup.
-								</p>
-							</li>
-							<li>
-								<p>
-									<i class="far fa-check-circle"></i> Pre-defined indexes or create your own.
-								</p>
-							</li>
-							<li>
-								<p>
-									<i class="far fa-check-circle"></i>$ USD or BTC maximisation.
-								</p>
-							</li>
-							<li>
-								<p>
-									<i class="far fa-check-circle"></i>24/7 market monitoring.
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-6 d-flex align-self-center order-first order-lg-last">
-					<div class="image pl-30">
-						<img src="assets/images/src/app-sre3.png" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Important Features End -->
+    <!-- Our Features Start -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <div class="section-heading">
+              <h2 class="title">DTok Features</h2>
+              <p class="text">
+                DTok is a community powered video sharing app platform where
+                users vote on videos to reward creators, curators, influencers
+                and viewers in cryptocurrency, like a decentralized tiktok.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature">
+              <div class="icon">
+                <i class="flaticon-upload"></i>
+              </div>
+              <div class="content">
+                <h4 class="title">Trade Automation</h4>
+                <p>
+                  Simplest platform to start trading cryptocurrencies with no
+                  prior experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature">
+              <div class="icon">
+                <i class="flaticon-settings"></i>
+              </div>
+              <div class="content">
+                <h4 class="title">Simple Fees Structure</h4>
+                <p>
+                  No extra subscription or management fees, only pay standard
+                  exchange trading fees.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature">
+              <div class="icon">
+                <i class="flaticon-target"></i>
+              </div>
+              <div class="content">
+                <h4 class="title">One Stop Solution</h4>
+                <p>
+                  TSLA is the simplest one-stop solution for all crypto related
+                  needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Features End -->
 
-	<!-- How It Work Start -->
-	<section class="how-it-work">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-10">
-					<div class="section-heading">
-						<h2 class="title">
-							How does it works
-						</h2>
-						<p class="text">
-							We take sophisticated trading strategies and make them simple to use with personalized automated trading.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-4 col-md-6">
-					<div class="single-how-it-work">
-						<div class="icon">
-							<i class="flaticon-shield"></i>
-						</div>
-						<div class="content">
-							<h4 class="title">
-								Buy Crypto
-							</h4>
-							<p>
-								Simple and user-friendly interface.
-								Use a bank debit or credit card to buy cryptocurrency.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-how-it-work">
-						<div class="icon">
-							<i class="flaticon-calendar"></i>
-						</div>
-						<div class="content">
-							<h4 class="title">
-								Index Trade Automation
-							</h4>
-							<p>
-								Users have an option to create their own index and choose $ USD or BTC maximisation.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-how-it-work">
-						<div class="icon">
-							<i class="flaticon-bell"></i>
-						</div>
-						<div class="content">
-							<h4 class="title">
-								Technology manages
-							</h4>
-							<p>
-								As your investments produce profits, we reinvest them for
-								you to avoid cash drag.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- How It Work End -->
+    <!-- Important Features Start -->
+    <section class="important-features" id="important-features">
+      <div class="container">
+        <div class="row mb-100">
+          <div class="col-lg-6 d-flex align-self-center">
+            <div class="image pr-30">
+              <img src="assets/images/src/app-sre2.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="content">
+              <div class="section-heading">
+                <h2 class="title">100% Portfolio Trade Automation</h2>
+                <p class="text">
+                  TSLA is the most advanced portfolio trade automation tool in
+                  the market! Designed to protect your funds against market
+                  volatility. Our machine learning driven algorithms
+                  consistently learn and improves on executing successful
+                  trades.
+                </p>
+              </div>
+              <ul class="feature-list">
+                <li>
+                  <p>
+                    <i class="far fa-check-circle"></i> Simple to use one click
+                    setup.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="far fa-check-circle"></i> Pre-defined indexes or
+                    create your own.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="far fa-check-circle"></i>$ USD or BTC
+                    maximisation.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="far fa-check-circle"></i>24/7 market monitoring.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="content">
+              <div class="section-heading">
+                <h2 class="title">Simplest way to Buy Crypto</h2>
+                <p class="text">
+                  TSLA is a fully automated machine learning-driven trade
+                  automation platform designed to help you buy and easily manage
+                  your crypto portfolio. Our machine-learning driven strategies
+                  know exactly when to enter the market so you don’t have to
+                  worry about spending days or weeks to find an optimum entry.
+                </p>
+              </div>
+              <ul class="feature-list">
+                <li>
+                  <p>
+                    <i class="far fa-check-circle"></i> Simple to use one click
+                    setup.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="far fa-check-circle"></i> Pre-defined indexes or
+                    create your own.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="far fa-check-circle"></i>$ USD or BTC
+                    maximisation.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="far fa-check-circle"></i>24/7 market monitoring.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 d-flex align-self-center order-first order-lg-last"
+          >
+            <div class="image pl-30">
+              <img src="assets/images/src/app-sre3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Important Features End -->
 
-	<!-- Testimonial Start -->
-	<!-- <section class="testimonial">
+    <!-- How It Work Start -->
+    <section class="how-it-work">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <div class="section-heading">
+              <h2 class="title">How does it works</h2>
+              <p class="text">
+                We take sophisticated trading strategies and make them simple to
+                use with personalized automated trading.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-how-it-work">
+              <div class="icon">
+                <i class="flaticon-shield"></i>
+              </div>
+              <div class="content">
+                <h4 class="title">Buy Crypto</h4>
+                <p>
+                  Simple and user-friendly interface. Use a bank debit or credit
+                  card to buy cryptocurrency.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-how-it-work">
+              <div class="icon">
+                <i class="flaticon-calendar"></i>
+              </div>
+              <div class="content">
+                <h4 class="title">Index Trade Automation</h4>
+                <p>
+                  Users have an option to create their own index and choose $
+                  USD or BTC maximisation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-how-it-work">
+              <div class="icon">
+                <i class="flaticon-bell"></i>
+              </div>
+              <div class="content">
+                <h4 class="title">Technology manages</h4>
+                <p>
+                  As your investments produce profits, we reinvest them for you
+                  to avoid cash drag.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- How It Work End -->
+
+    <!-- Testimonial Start -->
+    <!-- <section class="testimonial">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 col-md-10">
@@ -797,85 +1014,106 @@
 			</div>
 		</div>
 	</section> -->
-	<!-- Testimonial End -->
+    <!-- Testimonial End -->
 
-	<!-- Pricing  Area Start -->
-  <section id="roadmaps" class="timeline-area section-padding">
-
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 col-md-10">
-          <div class="section-heading">
-            <h2 class="title">
-              Road Map
-            </h2>
-            <p class="text">
-              We take sophisticated trading strategies and make them simple to use with personalized automated trading.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="all-timelines">
-        <!--SINGLE TIMELINE-->
-        <div class="single-timeline d-flex-2">
-          <div class="timeline-blank"></div>
-          <div class="timeline-text d-flex-2 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-            <div class="span">
-              <h6>February 2021</h6> — Website Launch
-              CifiPowa Graphic (beta) 
-              TSLA Airdrop & Bounty 
-              Smart contract development
+    <!-- Pricing  Area Start -->
+    <section id="roadmaps" class="timeline-area section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <div class="section-heading">
+              <h2 class="title">Road Map</h2>
+              <p class="text">
+                We take sophisticated trading strategies and make them simple to
+                use with personalized automated trading.
+              </p>
             </div>
-            <div class="t-square"></div>
           </div>
         </div>
-        <!--SINGLE TIMELINE-->
-        <div class="single-timeline d-flex-2">
-          <div class="timeline-blank"></div>
-          <div class="timeline-text d-flex-2 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-            <div class="span">
-              <h6>June 2021</h6>— 
-              Testnet Launch 
-              Token sale 
-              Forge 
-              TSLA staking
-              Marketplace
-              Meta City Pre-Alpha (gameplay)
-              Powa X (beta)
+        <div class="all-timelines">
+          <!--SINGLE TIMELINE-->
+          <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div
+              class="timeline-text d-flex-2 wow fadeInUp"
+              data-wow-delay="0.1s"
+              style="
+                visibility: visible;
+                animation-delay: 0.1s;
+                animation-name: fadeInUp;
+              "
+            >
+              <div class="span">
+                <h6>February 2021</h6>
+                — Website Launch CifiPowa Graphic (beta) TSLA Airdrop & Bounty
+                Smart contract development
+              </div>
+              <div class="t-square"></div>
             </div>
-            <div class="t-square"></div>
           </div>
-        </div>
-        <!--SINGLE TIMELINE-->
-        <div class="single-timeline d-flex-2">
-          <div class="timeline-blank"></div>
-          <div class="timeline-text d-flex-2 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-            <div class="span">
-              <h6>October 2021</h6> — ERC1155 support 
-              Public Release of Blockdown district (Meta City)
-              Internal test of SaaVC 
-              TSLA as in-game assets
-              TSLA Hunter on Powa X
+          <!--SINGLE TIMELINE-->
+          <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div
+              class="timeline-text d-flex-2 wow fadeInUp"
+              data-wow-delay="0.2s"
+              style="
+                visibility: visible;
+                animation-delay: 0.2s;
+                animation-name: fadeInUp;
+              "
+            >
+              <div class="span">
+                <h6>June 2021</h6>
+                — Testnet Launch Token sale Forge TSLA staking Marketplace Meta
+                City Pre-Alpha (gameplay) Powa X (beta)
+              </div>
+              <div class="t-square"></div>
             </div>
-            <div class="t-square"></div>
           </div>
-        </div>
-        <!--SINGLE TIMELINE-->
-        <div class="single-timeline d-flex-2">
-          <div class="timeline-blank"></div>
-          <div class="timeline-text d-flex-2 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-            <div class="span">
-              <h6>December 2021</h6> — TSLA on Powa X 
-              Art Exhibition on Powa X
-              Public Release of SaaVC 
-              Marketplace API
-              Immersive Shopping
+          <!--SINGLE TIMELINE-->
+          <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div
+              class="timeline-text d-flex-2 wow fadeInUp"
+              data-wow-delay="0.3s"
+              style="
+                visibility: visible;
+                animation-delay: 0.3s;
+                animation-name: fadeInUp;
+              "
+            >
+              <div class="span">
+                <h6>October 2021</h6>
+                — ERC1155 support Public Release of Blockdown district (Meta
+                City) Internal test of SaaVC TSLA as in-game assets TSLA Hunter
+                on Powa X
+              </div>
+              <div class="t-square"></div>
             </div>
-            <div class="t-square"></div>
           </div>
-        </div>
-        <!--SINGLE TIMELINE-->
-        <!-- <div class="single-timeline d-flex-2">
+          <!--SINGLE TIMELINE-->
+          <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div
+              class="timeline-text d-flex-2 wow fadeInUp"
+              data-wow-delay="0.4s"
+              style="
+                visibility: visible;
+                animation-delay: 0.4s;
+                animation-name: fadeInUp;
+              "
+            >
+              <div class="span">
+                <h6>December 2021</h6>
+                — TSLA on Powa X Art Exhibition on Powa X Public Release of
+                SaaVC Marketplace API Immersive Shopping
+              </div>
+              <div class="t-square"></div>
+            </div>
+          </div>
+          <!--SINGLE TIMELINE-->
+          <!-- <div class="single-timeline d-flex-2">
           <div class="timeline-blank"></div>
           <div class="timeline-text d-flex-2 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
             <div class="span">
@@ -884,8 +1122,8 @@
             <div class="t-square"></div>
           </div>
         </div> -->
-        <!--SINGLE TIMELINE-->
-        <!-- <div class="single-timeline d-flex-2">
+          <!--SINGLE TIMELINE-->
+          <!-- <div class="single-timeline d-flex-2">
           <div class="timeline-blank"></div>
           <div class="timeline-text d-flex-2 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
             <div class="span">
@@ -894,8 +1132,8 @@
             <div class="t-square"></div>
           </div>
         </div> -->
-        <!--SINGLE TIMELINE-->
-        <!-- <div class="single-timeline d-flex-2">
+          <!--SINGLE TIMELINE-->
+          <!-- <div class="single-timeline d-flex-2">
           <div class="timeline-blank"></div>
           <div class="timeline-text d-flex-2 wow fadeInUp" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
             <div class="span">
@@ -904,10 +1142,10 @@
             <div class="t-square"></div>
           </div>
         </div> -->
+        </div>
       </div>
-    </div>
-  </section>
-	<!-- <section class="pricing" id="pricing">
+    </section>
+    <!-- <section class="pricing" id="pricing">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 col-md-10">
@@ -983,110 +1221,108 @@
 			</div>
 		</div>
 	</section> -->
-	<!-- Pricing Area End -->
+    <!-- Pricing Area End -->
 
-	<!-- Counter Area Start -->
-	<section class="counter-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6">
-						<div class="single-counter">
-							<div class="icon icon1">
-									<i class="flaticon-cloud-storage-download"></i>
-							</div>
-							<div class="counter-wrapper">
-								<div class="counter">80</div> <span>k+</span>
-							</div>
-							<p class="text">
-								App Download
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="single-counter">
-							<div class="icon icon2">
-									<i class="flaticon-smiley"></i>
-							</div>
-							<div class="counter-wrapper">
-								<div class="counter">19</div> <span>k+</span>
-							</div>
-							<p class="text">
-								Happy users
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="single-counter">
-							<div class="icon icon3">
-									<i class="flaticon-rating"></i>
-							</div>
-							<div class="counter-wrapper">
-								<div class="counter">39</div> <span>k+</span>
-							</div>
-							<p class="text">
-								Great Reviews
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="single-counter">
-							<div class="icon  icon4">
-									<i class="flaticon-support"></i>
-							</div>
-							<div class="counter-wrapper">
-								<div class="counter">50</div> <span>+</span>
-							</div>
-							<p class="text">
-								Support Team
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-	</section>
-	<!-- Counter Area End -->
+    <!-- Counter Area Start -->
+    <section class="counter-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="single-counter">
+              <div class="icon icon1">
+                <i class="flaticon-cloud-storage-download"></i>
+              </div>
+              <div class="counter-wrapper">
+                <div class="counter">80</div>
+                <span>k+</span>
+              </div>
+              <p class="text">App Download</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-counter">
+              <div class="icon icon2">
+                <i class="flaticon-smiley"></i>
+              </div>
+              <div class="counter-wrapper">
+                <div class="counter">19</div>
+                <span>k+</span>
+              </div>
+              <p class="text">Happy users</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-counter">
+              <div class="icon icon3">
+                <i class="flaticon-rating"></i>
+              </div>
+              <div class="counter-wrapper">
+                <div class="counter">39</div>
+                <span>k+</span>
+              </div>
+              <p class="text">Great Reviews</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-counter">
+              <div class="icon icon4">
+                <i class="flaticon-support"></i>
+              </div>
+              <div class="counter-wrapper">
+                <div class="counter">50</div>
+                <span>+</span>
+              </div>
+              <p class="text">Support Team</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Area End -->
 
-	<!-- Team Area Start -->
-	<section class="team">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-10">
-					<div class="section-heading">
-						<h2 class="title">
-							Technology Stacks
-						</h2>
-						<p class="text">
-							We take sophisticated trading strategies and make them simple to use with personalized automated trading.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-6 item" style="margin: 15px auto;">
-					<img src="assets/images/technology/5.png" alt="">
-				</div>
-				<div class="col-md-4 col-sm-6 item" style="margin: 15px auto;">
-					<img src="assets/images/technology/2.png" alt="">
-				</div>
-				<div class="col-md-4 col-sm-6 item" style="margin: 15px auto;">
-					<img src="assets/images/technology/3.png" alt="">
-				</div>
-				<div class="col-md-4 col-sm-6 item" style="margin: 15px auto;">
-					<img src="assets/images/technology/4.png" alt="">
-				</div>
-				<div class="col-md-4 col-sm-6 item text-center" style="margin: 15px auto;">
-					<img src="assets/images/icon.jpg" style="width: 100px;" alt="">
-				</div>
-				<div class="col-md-4 col-sm-6 item" style="margin: 15px auto;">
-					<img src="assets/images/technology/6.png" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Team Area End -->
+    <!-- Team Area Start -->
+    <section class="team">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <div class="section-heading">
+              <h2 class="title">Technology Stacks</h2>
+              <p class="text">
+                We take sophisticated trading strategies and make them simple to
+                use with personalized automated trading.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 item" style="margin: 15px auto">
+            <img src="assets/images/technology/5.png" alt="" />
+          </div>
+          <div class="col-md-4 col-sm-6 item" style="margin: 15px auto">
+            <img src="assets/images/technology/2.png" alt="" />
+          </div>
+          <div class="col-md-4 col-sm-6 item" style="margin: 15px auto">
+            <img src="assets/images/technology/3.png" alt="" />
+          </div>
+          <div class="col-md-4 col-sm-6 item" style="margin: 15px auto">
+            <img src="assets/images/technology/4.png" alt="" />
+          </div>
+          <div
+            class="col-md-4 col-sm-6 item text-center"
+            style="margin: 15px auto"
+          >
+            <img src="assets/images/icon.jpg" style="width: 100px" alt="" />
+          </div>
+          <div class="col-md-4 col-sm-6 item" style="margin: 15px auto">
+            <img src="assets/images/technology/6.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team Area End -->
 
-	<!-- Faq Area Start -->
-	<!-- <section class="faq-area" id="faq-area">
+    <!-- Faq Area Start -->
+    <!-- <section class="faq-area" id="faq-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 d-flex align-self-center">
@@ -1161,10 +1397,10 @@
 			</div>
 		</div>
 	</section> -->
-	<!-- Faq Area End -->
+    <!-- Faq Area End -->
 
-	<!-- Blog Area Start -->
-	<!-- <section class="blog-section" id="blog-section">
+    <!-- Blog Area Start -->
+    <!-- <section class="blog-section" id="blog-section">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 col-md-10">
@@ -1294,10 +1530,10 @@
 			</div>
 		</div>
 	</section> -->
-	<!-- Blog Area End -->
+    <!-- Blog Area End -->
 
-	<!-- Get Start Area Start -->
-	<!-- <section class="ger-start-secrion">
+    <!-- Get Start Area Start -->
+    <!-- <section class="ger-start-secrion">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5">
@@ -1318,60 +1554,83 @@
 			</div>
 		</div>
 	</section> -->
-	<!-- Get Start Area End -->
+    <!-- Get Start Area End -->
 
-	<!-- COMMUNITY -->
-	<section class="blog-section" id="community">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-10">
-					<div class="section-heading">
-						<h2 class="title">
-							Community
-						</h2>
-						<p class="text">
-							Our community is growing every day and we want you to be a part of it. We love and appreciate all of you, TSLA
-							community members, and we can not wait to start our amazing journey together! Join us now!
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<ul class="social-links pull-left" style="float: left;">
-					<li class="col-lg-2 col-md-2">
-						<a href="#" data-toggle="tooltip" data-placement="top" title="Facebook">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-					</li>
-					<li class="col-lg-2 col-md-2">
-						<a href="#" data-toggle="tooltip" data-placement="top" title="Twitter">
-							<i class="fab fa-twitter"></i>
-						</a>
-					</li>
-					<li class="col-lg-2 col-md-2">
-						<a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin">
-							<i class="fab fa-linkedin-in"></i>
-						</a>
-					</li>
-					<li class="col-lg-2 col-md-2">
-						<a href="#" data-toggle="tooltip" data-placement="top" title="Instagram">
-							<i class="fab fa-instagram"></i>
-						</a>
-					</li>
-					<li class="col-lg-2 col-md-2">
-						<a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest">
-							<i class="fab fa-pinterest-p"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-	</section>
-	<!-- Footer Area Start -->
- 	<footer class="footer" id="footer">
-	
-		<!-- <div class="container">
+    <!-- COMMUNITY -->
+    <section class="blog-section" id="community">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <div class="section-heading">
+              <h2 class="title">Community</h2>
+              <p class="text">
+                Our community is growing every day and we want you to be a part
+                of it. We love and appreciate all of you, TSLA community
+                members, and we can not wait to start our amazing journey
+                together! Join us now!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <ul class="social-links pull-left" style="float: left">
+            <li class="col-lg-2 col-md-2">
+              <a
+                href="#"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="col-lg-2 col-md-2">
+              <a
+                href="#"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="col-lg-2 col-md-2">
+              <a
+                href="#"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Linkedin"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="col-lg-2 col-md-2">
+              <a
+                href="#"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="col-lg-2 col-md-2">
+              <a
+                href="#"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Pinterest"
+              >
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Area Start -->
+    <footer class="footer" id="footer">
+      <!-- <div class="container">
 			<div class="row">
 				<div class="col-sm-6 col-lg-4">
 					<div class="footer-widget about-widget">
@@ -1461,66 +1720,89 @@
 				</div>
 			</div>
 		</div> -->
-		<div class="copy-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5">
-						<div class="left-area">
-							<p>Copyright © 2019. All Rights Reserved By GeniusDevs.
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-7">
-						<ul class="social-links">
-							<li>
-								<a href="#" data-toggle="tooltip" data-placement="top" title="Facebook">
-									<i class="fab fa-facebook-f"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-toggle="tooltip" data-placement="top" title="Twitter">
-									<i class="fab fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin">
-									<i class="fab fa-linkedin-in"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-toggle="tooltip" data-placement="top" title="Instagram">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest">
-									<i class="fab fa-pinterest-p"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer> 
-	<!-- Footer Area End -->
+      <div class="copy-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="left-area">
+                <p>Copyright © 2019. All Rights Reserved By GeniusDevs.</p>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <ul class="social-links">
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Facebook"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/tlsacoin"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Twitter"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Linkedin"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Instagram"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Pinterest"
+                  >
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Area End -->
 
-	<!-- Back to Top Start -->
-	<div class="bottomtotop">
-		<i class="fas fa-chevron-right"></i>
-	</div>
-	<!-- Back to Top End -->
+    <!-- Back to Top Start -->
+    <div class="bottomtotop">
+      <i class="fas fa-chevron-right"></i>
+    </div>
+    <!-- Back to Top End -->
 
-	<!-- jquery -->
-	<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-	<!-- popper -->
-	<script src="assets/js/popper.min.js"></script>
-	<!-- bootstrap -->
-	<script src="https://www.jq22.com/jquery/bootstrap-4.2.1.js"></script>
-	<!-- plugin js-->
-	<script src="assets/js/plugin.js"></script>
-	<!-- main -->
-	<script src="assets/js/main.js"></script>
-</body>
-
+    <!-- jquery -->
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <!-- popper -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://www.jq22.com/jquery/bootstrap-4.2.1.js"></script>
+    <!-- plugin js-->
+    <script src="assets/js/plugin.js"></script>
+    <!-- main -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
